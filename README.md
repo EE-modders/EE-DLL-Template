@@ -3,7 +3,7 @@
 [![Forks](https://img.shields.io/github/forks/EE-modders/EE-DLL-Template)](https://github.com/EE-modders/EE-DLL-Template/network)
 [![Version](https://img.shields.io/badge/Empire%20Earth%20DLL%20Template%20Version-v1.0.0-blue)](https://github.com/EE-modders/EE-DLL-Template)
 [![License](https://img.shields.io/github/license/EE-modders/Empire-Earth-Stats?color=brightgreen)](https://github.com/EE-modders/Empire-Earth-Stats/blob/master/LICENSE)
-# 🔨 Empire Earth Stats
+# 🔨 Empire Earth DLL Template
 Empire Earth modding DLL, but without the init hell :> \
 By [EnergyCube](https://github.com/EnergyCube) for the Empire Earth Community.
 
