@@ -15,19 +15,24 @@
 
 void Project::printCredit()
 {
-    showMessage("------------------------------------------------------");
-    showMessage("  " + PROJECT_NAME_STR + " v" + PROJECT_VERSION_STR);
-    showMessage("  By " + PROJECT_AUTHOR_STR);
-    showMessage("------------------------------------------------------");
-    showMessage("  Credits:");
-    showMessage("    EnergyCube (EE DLL Template)"); // Don't remove me or I will find your house :>
-    showMessage("------------------------------------------------------");
+    Logger::showMessage("------------------------------------------------------");
+#ifdef _DEBUG
+    Logger::showMessage("  " + PROJECT_NAME_STR + " v" + PROJECT_VERSION_STR + " (DEBUG)");
+#else
+    Logger::showMessage("  " + PROJECT_NAME_STR + " v" + PROJECT_VERSION_STR);
+#endif // _DEBUG
+    Logger::showMessage("  By " + PROJECT_AUTHOR_STR);
+    Logger::showMessage("------------------------------------------------------");
+    Logger::showMessage("  Credits:");
+    Logger::showMessage("    EnergyCube (EE DLL Template)"); // Don't remove me or I will find your house :>
+    Logger::showMessage("------------------------------------------------------");
 }
 
 void Project::onStart()
 {
-    showMessage("onStart :D");
     printCredit();
+
+    Logger::showMessage("onStart :D");
 
     /*
     
@@ -36,7 +41,7 @@ void Project::onStart()
     while (1)
     {
         Sleep(1000);
-        showMessage("Cool message every second :>");
+        Logger::showMessage("Cool message every second :>");
     }
 
     */
@@ -44,5 +49,5 @@ void Project::onStart()
 
 void Project::onStop()
 {
-    showMessage("onStop :D");
+    Logger::showMessage("onStop :D");
 }

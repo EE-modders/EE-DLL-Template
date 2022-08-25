@@ -1,7 +1,9 @@
 #pragma once
 
-#include <string>
 #include "Utils.h"
+#include "Logger.h"
+
+#include <string>
 
 // Project INFO
 static const std::string PROJECT_NAME_STR = "Project";			// Also used as log file name!
